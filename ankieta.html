@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="strona.css">
+    <title>7 Języków Programowania</title>
+</head>
+<body>
+    <div class="content">
+        <div class="menu">
+            <a class="menu22" onclick="opens2()" href="javascript:void(0)"><img src="media/menu.png" alt="menu" class="menuImg"><span class="dec">JĘZYKI</span></a>
+            <a class="menu12" onclick="opens()" href="javascript:void(0)"><img src="media/menu.png" alt="menu" class="menuImg"><span class="dec">LINKI ZEWNĘTRZNE</span></a>
+        </div>
+        <div class="logo">
+            <span class="napisy"><span id="tytul">Ankieta</span><br>
+            Tutaj odpowiesz na parę pytań dotyczących tych języków programowania</span>
+        </div>
+        <div class="inside">
+            <img src="media/programing.jpg" alt="progr" class="img">
+            
+            <form class="formu">
+                <div class="pyt1">
+                    <h3>Ile z tych języków już znałeś/aś?</h3>
+                    <input type="checkbox" id="pyt1"> C <br>
+                    <input type="checkbox" id="pyt1"> C++ <br>
+                    <input type="checkbox" id="pyt1"> CSS <br>
+                    <input type="checkbox" id="pyt1"> HTML <br>
+                    <input type="checkbox" id="pyt1"> JavaScript <br>
+                    <input type="checkbox" id="pyt1"> MYSQL <br>
+                    <input type="checkbox" id="pyt1"> Python 
+                </div>
+                <br>
+                <div class="pyt2">
+                    <h3>Który z nich jest twoim ulubionym?</h3>
+                    <select name=pyt2 id=pyt2>
+                        <option>C</option>
+                        <option>C++</option>
+                        <option>CSS</option>
+                        <option>HTML</option>
+                        <option>JavaScript</option>
+                        <option>MYSQL</option>
+                        <option>Python</option>
+                    </select>
+                </div>
+                <br>
+                <div class="pyt3">
+                    <h3>W ilu językach potrafisz programować?</h3>
+                    <input type="number" id="pyt3">
+                </div>
+                <div class="pyt4">
+                    <h3>Co sądzisz o tej stronie?</h3>
+                    <textarea name=uwagi cols=50 rows=5> ...</textarea>
+                </div>
+                
+                <input class="bttn" type="submit" onclick="alert('Dane zostały zapisane w bazie')" value="Zapisz">
+              </form>
+
+
+        </div>
+        <div class="foot"><span class="napisy">Michał Wójtowicz 2tc</span></div>
+    </div>
+    <div class="menu1" id="menu1Suv">
+        <a class="menu11" onclick="closes()" href="javascript:void(0)"><span class="dec">X</span></a>
+        <div class="rz1">
+            <a href="https://technikprogramista.pl/kurs/html-css/lekcja/html-informacje/" target="_blank"><span class="dec2">HTML</span></a><br><br>
+            <a href="https://helpx.adobe.com/pl/dreamweaver/using/cascading-style-sheets.html" target="_blank"><span class="dec2">CSS</span></a><br><br>
+            <a href="https://vavatech.pl/technologie/jezyki-programowania/javascript" target="_blank"><span class="dec2">JavaScript</span></a><br><br>
+        </div>
+        <div class="rz2">
+        <a href="https://vavatech.pl/technologie/jezyki-programowania/Python" target="_blank"><span class="dec2">Python</span></a><br><br>
+        <a href="https://vavatech.pl/technologie/jezyki-programowania/c" target="_blank"><span class="dec2">Język C</span></a><br><br>
+        <a href="https://warszawa.naszemiasto.pl/programowanie-c-podstawy-ktore-powinienes-wiedziec/ar/c10-4220352" target="_blank"><span class="dec2">C++</span></a><br><br>
+        </div>
+        <div class="rz3"><a href="https://jakwybrachosting.pl/co-to-jest-baza-danych-mysql/" target="_blank"><span class="dec">MYSQL</span></a></div>
+        
+    </div>
+    
+    
+
+    <div class="menu2" id="menu2Suv">
+        <a class="menu21" onclick="closes2()" href="javascript:void(0)"><span class="dec">X</span></a>
+        <a href="html.html"><span class="pola">Strona Główna</span></a><br><br>
+        <a href="html.html"><span class="pola">HTML</span></a><br><br>
+        <a href="css.html"><span class="pola">CSS</span></a><br><br>
+        <a href="js.html"><span class="pola">JavaScript</span></a><br><br>
+        <a href="python.html"><span class="pola">Python</span></a><br><br>
+        <a href="c.html"><span class="pola">Język C</span></a><br><br>
+        <a href="cpp.html"><span class="pola">C++</span></a><br><br>
+        <a href="mysql.html"><span class="pola">MYSQL</span></a><br><br>
+        <a href="galeria.html"><span class="pola">Galeria</span></a><br><br>
+        <a href="ankieta.html"><span class="pola">Ankieta</span></a>
+    </div>
+    <script>
+        function opens() {
+            document.getElementById("menu1Suv").style.height = "35%";
+        }
+        
+        function closes() {
+            document.getElementById("menu1Suv").style.height = "0";
+        }
+
+        function opens2() {
+            if(window.innerWidth < 800){
+                document.getElementById("menu2Suv").style.width = "40%";
+            }
+            else{
+                document.getElementById("menu2Suv").style.width = "20%";
+            }
+        }
+        
+        function closes2() {
+            document.getElementById("menu2Suv").style.width = "0";
+        }
+        </script>
+</body>
+</html>

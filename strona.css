@@ -1,0 +1,398 @@
+body{
+    margin: 0;
+    color: green;
+    font-family: "Comic Sans MS";
+    
+    border-right: 2px green solid;
+    background-color: green;
+    
+}
+
+a{
+    text-decoration: none;
+}
+.content{
+    vertical-align:top;
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+}
+.menu{
+    height: 5vh;
+    background-color: black;
+}
+#tytul{
+    font-size: 3vw;
+    
+}
+.napisy{
+    position: relative;
+    bottom: -20px;
+    margin-left: 30px;
+}
+.logo{
+    vertical-align:top;
+    height: 20vh;
+    background-color: black;
+    font-size: 15px;
+    text-align: center;
+    position: relative;
+}
+.inside{
+    vertical-align:top;
+    height: 67vh;
+    background-color: black;
+    padding-left: 20px;
+}
+.foot{
+    vertical-align:top;
+    height: 7vh;
+    background-color: black;
+    text-align: center;
+    border-bottom: 4px green solid;
+}
+
+.foot:hover > .menu1{
+    background-color: black;
+    animation-name: menupop;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+.lista, ul{
+    font-size: 20px;
+    margin-top: 40px;
+    margin-left: 60px;
+    top: 30px;
+}
+
+.img{
+    height: 30%;
+    float: right;
+    margin-right: 40px;
+    margin-top: 40px;
+}
+
+.menu1{
+    background-color: black;
+    width: 100%;
+    height: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
+    border-bottom: 3px green solid;
+}
+
+
+.menu11{
+    background-color: black;
+    height: 40px;
+    position: absolute;
+    width: 40px;
+    bottom: 20px;
+    right: 0px;
+    font-size: 40px;
+}
+
+.menu12{
+    background-color: black;
+    height: 4%;
+    position: absolute;
+    right: 10px;
+    font-size: 30px;
+}
+
+.menu2{
+    background-color: black;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
+    border-right: 2px green solid;
+}
+
+
+.menu21{
+    background-color: black;
+    height: 40px;
+    position: absolute;
+    width: 40px;
+    top: 0px;
+    right: 0px;
+    font-size: 40px;
+}
+
+.menuImg{
+    height: 100%;
+}
+
+.menu22{
+    background-color: black;
+    height: 4%;
+    position: absolute;
+    left: 10px;
+    font-size: 30px;
+}
+
+.dec{
+    color: green;
+    text-decoration: none;
+}
+
+.dec:visited{
+    color: green;
+    text-decoration: none;
+}
+
+.dec:hover{
+    color: rgb(0, 46, 0);
+    text-decoration: none;
+}
+
+.tabela{
+    border: 2px solid green;
+    border-collapse: collapse;
+    height: 50%;
+    width: 50%;
+    position: relative;
+    left: 25%; top: 10%;
+    text-align: center;
+    bottom: 2px;
+    font-size: 1vw;
+}
+
+.pola{
+    color: green;
+    text-decoration: none;
+    font-size: 30px;
+    padding-left: 30px;
+    position: relative;
+    top: 15%;
+}
+
+.rek{
+    border: 2px solid green;
+    border-collapse: collapse;
+}
+
+.odnos{
+    position: absolute;
+    bottom: 10%;
+    padding-left: 20px;
+}
+
+.rz1{
+    color: green;
+    text-decoration: none;
+    font-size: 30px;
+    padding-left: 30px;
+    position: absolute;
+    top: 10%; left: -3%;
+}
+
+.rz2{
+    color: green;
+    text-decoration: none;
+    font-size: 30px;
+    padding-left: 30px;
+    position: absolute;
+    top: 10%; left: 30%;
+}
+
+.rz3{
+    color: green;
+    text-decoration: none;
+    font-size: 30px;
+    padding-left: 30px;
+    position: absolute;
+    top: 10%; left: 60%;
+    
+}
+
+.dec2{
+    color: green;
+    text-decoration: none;
+    font-size: 30px;
+    padding-left: 30px;
+    position: relative;
+    top: 10%;
+}
+
+.formu{
+    padding-top: 10px;
+    padding-left: 60px;
+}
+
+.pyt1{
+    position: relative;
+}
+
+.pyt2{
+    position: relative;
+}
+
+.pyt3{
+    position: absolute;
+    top: 26%; right: 40%;
+}
+
+.pyt4{
+    position: absolute;
+    top: 45%; right: 38%;
+}
+
+
+.column {
+    float: left;
+    width: 10%;
+    padding: 10px;
+  }
+  
+  .column img {
+    opacity: 0.8;
+    cursor: pointer
+  }
+  
+  .column img:hover {
+    opacity: 1;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .container {
+    position: relative;
+    left: 50%;
+    margin-left: -250px;
+    display: none;
+    height: 1hv;
+  }
+
+  .container img{
+    border: green 2px dashed;
+  }
+
+  .cont{
+    width: 500px;
+  }
+  
+  #imgtext {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-size: 20px;
+    
+  }
+
+  .container img{
+    height:1hv;
+  }
+
+  .row img{
+    height: 13vh;
+    width: 100%;
+  }
+
+  .bttn{
+    position: relative;
+    top: 4vh;
+    background-color: black;
+    color: green;
+    height: 10vh;
+    width: 20%;
+    font-size: 30px;
+    font-family: "Comic Sans MS";
+  }
+
+@media screen and (max-width: 1920px){
+    #tytul{font-size: 3vw;}
+}
+
+@media screen and (max-width: 800px){
+    #tytul{font-size: 5vw;}
+    .inside{height: 80vh;}
+    .img{width: 30%; float: left}
+    .tabela{height: 40%; top: 7%;}
+    .odnos{bottom: -5%;}
+    .rek{font-size: 15px;}
+    .column{width: 9%; height: 40vw;}
+    .column img{height: 20%;}
+    .pyt2{top: -40px;}
+    .pyt3{top: 63%; left: 10%;}
+    .pyt4{top: 80%; left: 10%;}
+    .bttn{left: 60%;}
+}
+
+@media screen and (max-width: 600px){
+    #tytul{font-size: 6vw;}
+    .inside{height: 100vh;}
+    .img{width: 95%}
+    .tabela{height: 25%; top: 3%;}
+    .odnos{bottom: -27%;}
+    .rek{font-size: 12px;}
+    .column{width: 18%; height: 10vw;}
+    .column img{height: 100%;}
+    .cont{width: 300px;}
+    .container{left: 50%; margin-left: -150px;}
+    .pyt2{top: -40px;}
+    .pyt3{top: 93%; left: 13%;}
+    .pyt4{top: 105%; left: 13%;}
+    .bttn{left: 60%; top: -5vh; height: 70px; width: 20%; font-size: 23px;}
+    .pola{font-size: 25px;}
+}
+
+#anim{
+    animation-name: ani;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes ani {
+    0% {width: 0%; overflow-x: hidden;}
+    100% {width: 100%; overflow-x: visible;}}
+
+
+#kwad{
+    height: 50%;
+    width: 7%;
+    background-color: green;
+    position: absolute;
+    left: 30px;
+    top: 20px;
+    border-radius: 10%;
+}
+
+#usta{
+    width: 100%;
+    background-color: black;
+    height: 17px;
+    position: relative;
+    top: 3%;
+}
+
+#oko1{
+    border-radius: 50%;
+    width: 30%;
+    background-color: black;
+    height: 30%;
+    position: relative;
+    top: 30%; left: 10%;
+}
+
+#oko2{
+    border-radius: 50%;
+    width: 30%;
+    background-color: black;
+    height: 30%;
+    position: relative;
+    left: 60%;
+}
