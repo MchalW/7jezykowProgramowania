@@ -80,6 +80,7 @@
 
     <div class="menu2" id="menu2Suv">
         <a class="menu21" onclick="closes2()" href="javascript:void(0)"><span class="dec">X</span></a>
+        <a href="html.html"><span class="pola">Strona Główna</span></a><br><br>
         <a href="html.html"><span class="pola">HTML</span></a><br><br>
         <a href="css.html"><span class="pola">CSS</span></a><br><br>
         <a href="js.html"><span class="pola">JavaScript</span></a><br><br>
@@ -92,7 +93,7 @@
     </div>
     <script>
         function opens() {
-            document.getElementById("menu1Suv").style.height = "300px";
+            document.getElementById("menu1Suv").style.height = "35%";
         }
         
         function closes() {
@@ -100,7 +101,12 @@
         }
 
         function opens2() {
-            document.getElementById("menu2Suv").style.width = "250px";
+            if(window.innerWidth < 800){
+                document.getElementById("menu2Suv").style.width = "40%";
+            }
+            else{
+                document.getElementById("menu2Suv").style.width = "20%";
+            }
         }
         
         function closes2() {
